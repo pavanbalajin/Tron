@@ -1,4 +1,4 @@
-# Generative AI World Cup 2024 hakhathon project
+# Alita
 
 TRON Motor Company: A Digital Dream, Realized
 
