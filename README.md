@@ -1,6 +1,6 @@
 # Alita
-
-TRON Motor Company: A Digital Dream, Realized
+# Team name: Lego
+# Demo Company name: TRON Motor Company
 
 Company Philosophy:
 
