@@ -23,13 +23,14 @@ Lightweight, high-performance electric motors
 Advanced stability control and regenerative braking
 Integrated augmented reality display for navigation and entertainment
 Son of Flynn:
+Light Runner:
+It is a sleek, futuristic vehicle used for transportation within the Grid, the digital world. 
+It's characterized by its streamlined design, glowing lights, and ability to hover above the ground.
 
-Inspired by: Sam Flynn's sleek, futuristic motorcycle.
-Key Features:
-Powerful electric engine for rapid acceleration
-Adaptive suspension for optimal handling
-Futuristic cockpit with holographic displays
-Integrated AI assistant for personalized driving experience
+Light Jets: 
+Light Jets are agile, single-seater aerial vehicles used for both combat and transportation within the Grid. 
+They are characterized by their distinctive triangular shape, glowing lights, and ability to perform acrobatic maneuvers.
+
 Grid Cruiser:
 
 Inspired by: The futuristic cars of the Grid.
