@@ -1,4 +1,4 @@
-# Alita
+# Project Name:  Alita
 # Team name: Lego
 # Demo Company name: TRON Motor Company
 
