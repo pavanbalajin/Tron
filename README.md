@@ -1,5 +1,4 @@
-# From Tron Motors
-Generative AI World Cup 2024 hakhathon project
+# Generative AI World Cup 2024 hakhathon project
 
 TRON Motor Company: A Digital Dream, Realized
 
