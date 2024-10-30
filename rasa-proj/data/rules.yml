@@ -1,0 +1,84 @@
+version: "3.1"
+
+rules:
+
+- rule: welcome
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: set claim number
+  steps:
+  - intent: ask_claimnumber
+  - action: action_setclaimnumber
+
+- rule: query total cost
+  steps:
+  - intent: ask_totalcost
+  - action: action_fetchdata
+
+- rule: query labour cost
+  steps:
+  - intent: ask_labourcost
+  - action: action_fetchlabourcost
+
+- rule: query parts cost
+  steps:
+  - intent: ask_partscost
+  - action: action_fetchpartscost
+
+- rule: query damage summary
+  steps:
+  - intent: ask_damagedetails
+  - action: action_fetchdamagesummary
+
+- rule: query image count
+  steps:
+  - intent: ask_imagecount
+  - action: action_imagecount
+
+- rule: query missing images
+  steps:
+  - intent: ask_missingimages
+  - action: action_missingimages
+
+- rule: query image quality
+  steps:
+  - intent: ask_imagequality
+  - action: action_imagequality
+
+- rule: query image visibility
+  steps:
+  - intent: ask_imagevisibility
+  - action: action_imagevisibility
+
+- rule: query check VIN
+  steps:
+  - intent: ask_VIN
+  - action: action_VIN
+
+- rule: start queries
+  steps:
+  - intent: great_queries
+  - action: utter_queries
+
+- rule: thank you
+  steps:
+  - intent: thankyou
+  - action: action_resetdata
+
+- rule: Implementation of the Two-Stage-Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback
+  - action: action_deactivate_loop

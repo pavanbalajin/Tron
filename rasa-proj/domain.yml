@@ -1,0 +1,179 @@
+version: "3.1"
+
+entities:
+  - clid
+  - clnum
+  - tcost
+  - lcost
+  - pcost
+  - dsummary
+  - IMGNO
+
+slots:
+  clid:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      intent: ask_claimnumber
+
+  tcost:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      auto_fill: true
+      initial_value: 0.1
+      intent: ask_totalcost
+
+  lcost:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      auto_fill: true
+      initial_value: 0.1
+      intent: ask_labourcost
+
+  pcost:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      intent: ask_partscost
+
+  dsummary:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      intent: ask_damagedetails
+
+  IMGNO:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      intent: ask_imagecount
+
+  MISIMG:
+    type: categorical
+    values:
+      - visible
+      - not visible
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      intent: ask_missingimages
+
+  IMGQ:
+    type: categorical
+    values:
+      - high
+      - medium
+      - low
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      intent: ask_imagequality
+
+  CVIMG:
+    type: categorical
+    values:
+      - yes
+      - no
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      intent: ask_imagevisibility
+  VIMG:
+    type: categorical
+    values:
+      - yes
+      - no
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: clid
+      intent: ask_VIN
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - ask_totalcost
+  - ask_labourcost
+  - ask_partscost
+  - ask_damagedetails
+  - ask_claimnumber
+  - thankyou
+  - ask_imagecount
+  - ask_missingimages
+  - ask_imagequality
+  - ask_imageorientation
+  - ask_imagevisibility
+  - ask_superresolution
+  - ask_VIN
+  - ask_odometer
+  - ask_damagevisible
+  - ask_damagesevere
+  - ask_carcolor
+  - ask_carcondition
+  - ask_islpvisible
+  - ask_carpartsdamaged
+  - great_queries
+
+
+responses:
+  utter_greet:
+  - text: "Hello, I am Alita, Tata Motor's Virtual Assistant.To Start,share Docket number."
+ 
+  utter_queries:
+  - text: "Thank you, you can start your queries"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Allstate."
+
+  utter_noworries:
+  - text: "You're welcome :)"
+
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+
+actions:
+ - action_fetchdata
+ - action_fetchlabourcost
+ - action_fetchpartscost
+ - action_fetchdamagesummary
+ - action_setclaimnumber
+ - action_resetdata
+ - action_imagecount
+ - action_missingimages
+ - action_imagequality
+ - action_imagevisibility
+ - action_VIN
+ - action_default_fallback
+ - ActionDefaultFallback
+ - action_deactivate_loop
+ 
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

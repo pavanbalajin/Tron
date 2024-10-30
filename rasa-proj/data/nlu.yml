@@ -1,0 +1,248 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: ask_claimnumber
+  examples: |
+    - my claim number is [AL100234](clid)
+    - my claim number : [AL100234](clid)
+    - claim number is [AL100234](clid)
+    - claim number: [AL100234](clid)
+    - cl#: [AL100234](clid)
+    - [AL100234](clid)
+    - my claim number is [AL200345](clid)
+    - my claim number : [AL200345](clid)
+    - claim number is [AL200345](clid)
+    - claim number: [AL200345](clid)
+    - cl#: [AL200345](clid)
+    - [AL200345](clid)
+    - my claim number is [AL304050](clid)
+    - my claim number : [AL304050](clid)
+    - claim number is [AL304050](clid)
+    - claim number: [AL304050](clid)
+    - cl#: [AL304050](clid)
+    - [AL304050](clid)
+
+- intent: great_queries
+  examples: |
+    - Queries
+    - queries
+
+- intent: ask_imagecount
+  examples: |
+    - how many [images](IMGNO) were uploaded to the docket
+    - how many [images](IMGNO) were added to the docket?
+    - How many [images](IMGNO) have been added to the docket?
+    - what is the [image](IMGNO) count in the docket
+    - how many [images](IMGNO) were uploaded
+    - what is the [image](IMGNO) count
+
+- intent: ask_missingimages
+  examples: |
+    - Any required missing [photos](MISIMG)?
+    - Is there any [photos](MISIMG) missing?
+    - [photos](MISIMG) missing?
+    - would you let me know if any [photos](MISIMG) missing?
+
+- intent: ask_imagequality
+  examples: |
+    - how is image [quality](IMGQ)
+    - how good is the picture [quality](IMGQ)
+    - What level of picture [quality](IMGQ) is there
+    - What degree of picture [quality](IMGQ) exists 
+
+- intent: ask_imageorientation
+  examples: |
+    - Is image [orientation](IMGOR) correct
+    - Is there a proper image [orientation](IMGOR)
+    - Is there a correct image [orientation](IMGOR)
+
+- intent: ask_imagevisibility
+  examples: |
+    - Is [car](CVIMG) visible in the image
+    - Is there a [car](CVIMG) in the picture
+    - Does the image include a [car](CVIMG)
+
+- intent: ask_superresolution
+  examples: |
+    - Is super [resolution](SRIMG) required 
+    - Is there a [car](CVIMG) in the picture
+    - Does the image include a [car](CVIMG)
+
+- intent: ask_VIN
+  examples: |
+    - Is [VIN](VIMG) image uploaded
+    - Uploaded [VIN](VIMG) image status.
+    - is [VIN](VIMG) available
+
+- intent: ask_odometer
+  examples: |
+    - Is the [odometer](ODOIMG) image uploaded
+    - Is the [odometer](ODOIMG) image available
+    - does the [odometer](ODOIMG) image available
+
+- intent: ask_damagevisible
+  examples: |
+    - Is [damage](DMGIMG) visible in photo?
+    - Are there any [damage](DMGIMG) shown in the photos
+    - Can you see the [damage](DMGIMG) in the photos?
+
+- intent: ask_damagesevere
+  examples: |
+    - Is the damage [severe](IMGDMG)? 
+    - Is damage [severe](IMGDMG)? 
+
+- intent: ask_carcolor
+  examples: |
+    - What is the car [color](CIMG)
+    - what is the [color](CIMG) of the car
+    - what [color](CIMG) is the car
+
+- intent: ask_carcondition
+  examples: |
+    - Is car in good [condition](CNDIMG)
+    - what is car [condition](CNDIMG)
+    - how good is car [condition](CNDIMG)
+
+- intent: ask_islpvisible
+  examples: |
+    - Is [license plate](LPIMG) visible? 
+    - Can you see the [license plate](LPIMG)
+
+- intent: ask_carpartsdamaged
+  examples: |
+    - Which car parts are [damaged](IMGCPD)
+    - Can you see the [license plate](LPIMG)
+
+- intent: ask_totalcost
+  examples: |
+    - what is the [total cost](tcost)
+    - please tell me the [total cost](tcost)
+    - can i know the [total cost](tcost)
+
+- intent: ask_labourcost
+  examples: |
+    - [labour cost](lcost) 
+    - please tell me the [labour cost](lcost) 
+    - can i know the [labour cost](lcost) 
+    - what is the [labour cost](lcost)
+    - please tell me the [labour cost](lcost)
+    - can i know the [labour cost](lcost)
+
+- intent: ask_partscost
+  examples: |
+    - [parts cost](pcost) 
+    - please tell me the [parts cost](pcost) 
+    - can i know the [parts cost](pcost) 
+    - what is the [parts cost](pcost)
+    - please tell me the [parts cost](pcost)
+    - can i know the [parts cost](pcost)
+
+- intent: ask_damagedetails
+  examples: |
+    - could you please share the damage [summary](dsummary)
+    - what's the damage [summary](dsummary)
+    - damage assessment [summary](dsummary)
+    - can i know the [summary](dsummary)
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: thankyou
+  examples: |
+    - thank you goodbye
+    - okay thank you goodbye
+    - thank you bye
+    - um okay thank you good bye
+    - thank you
+    - and thats all thank you and good bye
+    - okay thank you
+    - thanks
+    - thanks goodbye
+    - thank you and good bye
+
