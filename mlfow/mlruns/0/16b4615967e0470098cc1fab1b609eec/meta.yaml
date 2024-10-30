@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Teaching/Data%20Science/mlops/mlflow/mlflow_rasa_track/mlruns/0/16b4615967e0470098cc1fab1b609eec/artifacts
+end_time: 1730296733690
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 16b4615967e0470098cc1fab1b609eec
+run_name: judicious-colt-412
+run_uuid: 16b4615967e0470098cc1fab1b609eec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730296732549
+status: 4
+tags: []
+user_id: root

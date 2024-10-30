@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Teaching/Data%20Science/mlops/mlflow/mlflow_rasa_track/mlruns/0/d4e4b52635ec4f40a00f105c8c2da7d1/artifacts
+end_time: 1730296751886
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d4e4b52635ec4f40a00f105c8c2da7d1
+run_name: clean-frog-412
+run_uuid: d4e4b52635ec4f40a00f105c8c2da7d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730296750759
+status: 4
+tags: []
+user_id: root

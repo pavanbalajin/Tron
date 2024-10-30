@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Teaching/Data%20Science/mlops/mlflow/mlflow_rasa_track/mlruns/0/b127d1d8b4484ceeb73d6580b2084498/artifacts
+end_time: 1730297237706
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b127d1d8b4484ceeb73d6580b2084498
+run_name: placid-carp-990
+run_uuid: b127d1d8b4484ceeb73d6580b2084498
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730297236731
+status: 4
+tags: []
+user_id: root

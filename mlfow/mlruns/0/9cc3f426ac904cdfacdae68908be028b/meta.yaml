@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Teaching/Data%20Science/mlops/mlflow/mlflow_rasa_track/mlruns/0/9cc3f426ac904cdfacdae68908be028b/artifacts
+end_time: 1730297352496
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9cc3f426ac904cdfacdae68908be028b
+run_name: gentle-lark-574
+run_uuid: 9cc3f426ac904cdfacdae68908be028b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730297352051
+status: 4
+tags: []
+user_id: root

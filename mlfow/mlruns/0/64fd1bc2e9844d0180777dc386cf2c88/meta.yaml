@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Teaching/Data%20Science/mlops/mlflow/mlflow_rasa_track/mlruns/0/64fd1bc2e9844d0180777dc386cf2c88/artifacts
+end_time: 1730297017458
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 64fd1bc2e9844d0180777dc386cf2c88
+run_name: abrasive-skunk-591
+run_uuid: 64fd1bc2e9844d0180777dc386cf2c88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730297017108
+status: 4
+tags: []
+user_id: root

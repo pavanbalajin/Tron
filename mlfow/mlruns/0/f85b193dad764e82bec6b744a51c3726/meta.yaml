@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Teaching/Data%20Science/mlops/mlflow/mlflow_rasa_track/mlruns/0/f85b193dad764e82bec6b744a51c3726/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f85b193dad764e82bec6b744a51c3726
+run_name: rumbling-yak-249
+run_uuid: f85b193dad764e82bec6b744a51c3726
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730293141553
+status: 1
+tags: []
+user_id: balaj

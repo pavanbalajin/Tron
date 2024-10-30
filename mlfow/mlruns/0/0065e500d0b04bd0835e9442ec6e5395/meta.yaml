@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Teaching/Data%20Science/mlops/mlflow/mlflow_rasa_track/mlruns/0/0065e500d0b04bd0835e9442ec6e5395/artifacts
+end_time: 1730297206363
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0065e500d0b04bd0835e9442ec6e5395
+run_name: rebellious-asp-34
+run_uuid: 0065e500d0b04bd0835e9442ec6e5395
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730297205721
+status: 4
+tags: []
+user_id: root
