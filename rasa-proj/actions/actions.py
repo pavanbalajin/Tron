@@ -249,7 +249,7 @@ class action_default_fallback(Action):
             dispatcher.utter_message(response.choices[0].message.content.strip())
             SlotSet("called", "done")
         # pause the tracker so that the bot stops responding to user input
-            return []
+            return [UserUtteranceReverted()]
 
 def DataFetch(dnum,col):
     cnx = sqlite3.connect('resourceDB.db')
