@@ -1,4 +1,4 @@
-# Project Name:  Alita
+# Generative AI World Cup Project Name:  Alita
 # Team name: Lego
 # Demo Company name: TRON Motor Company
 
