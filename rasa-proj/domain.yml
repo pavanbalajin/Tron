@@ -137,7 +137,7 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hello, I am Alita, Tata Motor's Virtual Assistant.To Start,share Docket number."
+  - text: "Hello, I am Alita, Tron Motor's Virtual Assistant.To Start,share Docket number."
  
   utter_queries:
   - text: "Thank you, you can start your queries"
@@ -149,7 +149,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Allstate."
+  - text: "I am a bot, powered by Tron Motors."
 
   utter_noworries:
   - text: "You're welcome :)"

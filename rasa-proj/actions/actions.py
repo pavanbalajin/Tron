@@ -238,22 +238,18 @@ class action_default_fallback(Action):
             import os
             openai_key  = os.getenv('OPENAI_API_KEY')
             msg =  tracker.latest_message['text'] 
-            openai.organization = 'org-dWr6kwvhjhxT7yzZzXk7axZZ'
-            openai.api_key = "sk-proj-i6uGsn0fJvBvw0BJ4b4eT3BlbkFJRIeyUjaZL0XApAbc8ZmP"
-            response = openai.Completion.create(
-            model="text-davinci-002",
-            prompt=msg,
-            temperature=0.9,
-            max_tokens=150,
-            top_p=1,
-            frequency_penalty=0.0,
-            presence_penalty=0.6,
-            stop=[" Human:", " AI:"])
-            dispatcher.utter_message(response['choices'][0]['text'])
+            response = openai.ChatCompletion.create(
+            model="gpt-4o-mini",
+            max_tokens=10,
+            temperature=0.5,
+            messages=[
+                    {"role": "user", "content": str(msg)}
+                ]
+            )
+            dispatcher.utter_message(response.choices[0].message.content.strip())
+            SlotSet("called", "done")
         # pause the tracker so that the bot stops responding to user input
             return []
-
-
 
 def DataFetch(dnum,col):
     cnx = sqlite3.connect('resourceDB.db')
@@ -261,6 +257,15 @@ def DataFetch(dnum,col):
     MY_SQL ="SELECT " + col + " FROM inspection WHERE claimid =?"
     df = pd.read_sql(MY_SQL, con=cnx, params=[dnum])
     return df.values[0][0]
+
+class ActionDeactivateLoop(Action):
+    def name(self) -> Text:
+        return "action_deactivate_loop"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
+        # Logic to deactivate the loop
+        dispatcher.utter_message("Loop deactivated.")
+        return []
 #
 # class ActionHelloWorld(Action):
 #
