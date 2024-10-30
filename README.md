@@ -28,6 +28,7 @@ It is a sleek, futuristic vehicle used for transportation within the Grid, the d
 It's characterized by its streamlined design, glowing lights, and ability to hover above the ground.
 
 Light Jets: 
+
 Light Jets are agile, single-seater aerial vehicles used for both combat and transportation within the Grid. 
 They are characterized by their distinctive triangular shape, glowing lights, and ability to perform acrobatic maneuvers.
 
