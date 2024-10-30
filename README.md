@@ -49,7 +49,8 @@ TRON Community: A platform for enthusiasts to connect, share experiences, and pa
 Future Vision:
 
 Usecase:
-Use Case: TRON Service Manager's Customer Support Challenge
+TRON Service Manager's Customer Support Challenge
+
 Primary Actor: TRON Service Manager
 
 Goal: To efficiently respond to customer inquiries related to TRON vehicles and their technical specifications.
